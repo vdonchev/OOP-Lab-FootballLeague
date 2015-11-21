@@ -87,11 +87,6 @@
 
         private DateTime DateOfBirth
         {
-            get
-            {
-                return this.dateOfBirth;
-            }
-
             set
             {
                 if (value.Year < MinimumAllowedYear)

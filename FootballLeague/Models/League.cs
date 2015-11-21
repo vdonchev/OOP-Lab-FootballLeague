@@ -1,9 +1,8 @@
-﻿namespace FootballLeague.League
+﻿namespace FootballLeague.Models
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Models;
     using Utils;
 
     public static class League
@@ -11,15 +10,9 @@
         private static List<Team> teams = new List<Team>();
         private static List<Match> matches = new List<Match>();
 
-        public static IEnumerable<Team> Teams
-        {
-            get { return teams; }
-        }
+        public static IEnumerable<Team> Teams => teams;
 
-        public static IEnumerable<Match> Matches
-        {
-            get { return matches; }
-        }
+        public static IEnumerable<Match> Matches => matches;
 
         public static void AddTeam(Team team)
         {

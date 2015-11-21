@@ -5,11 +5,6 @@
 
     public class Match
     {
-        private Team homeTeam;
-        private Team awayTeam;
-        private Score score;
-        private int id;
-
         public Match(Team homeTeam, Team awayTeam, Score score, int id)
         {
             if (homeTeam.Name == awayTeam.Name)
@@ -23,29 +18,13 @@
             this.Id = id;
         }
 
-        private Team AwayTeam
-        {
-            get { return this.awayTeam; }
-            set { this.awayTeam = value; }
-        }
+        private Team AwayTeam { get; }
 
-        private Team HomeTeam
-        {
-            get { return this.homeTeam; }
-            set { this.homeTeam = value; }
-        }
+        private Team HomeTeam { get; }
 
-        private Score MatchScore
-        {
-            get { return this.score; }
-            set { this.score = value; }
-        }
+        private Score MatchScore { get; }
 
-        public int Id
-        {
-            get { return this.id; }
-            private set { this.id = value; }
-        }
+        public int Id { get; private set; }
 
         public Team GetWinner()
         {

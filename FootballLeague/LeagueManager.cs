@@ -1,4 +1,4 @@
-﻿namespace FootballLeague.League
+﻿namespace FootballLeague
 {
     using System;
     using System.Linq;

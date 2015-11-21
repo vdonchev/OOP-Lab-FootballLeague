@@ -11,7 +11,7 @@
 
         private string name;
         private string nickName;
-        private List<Player> players;
+        private readonly List<Player> players;
 
         public Team(string name, string nickName, DateTime dateFounded)
         {
@@ -46,11 +46,6 @@
 
         private string NickName
         {
-            get
-            {
-                return this.nickName;
-            }
-
             set
             {
                 if (string.IsNullOrEmpty(value.Trim()))
@@ -67,12 +62,9 @@
             }
         }
 
-        private DateTime DateFounded { get; set; }
+        private DateTime DateFounded { get;}
 
-        private IEnumerable<Player> Players
-        {
-            get { return this.players; }
-        }
+        private IEnumerable<Player> Players => this.players;
 
         public void AddPlayer(Player player)
         {

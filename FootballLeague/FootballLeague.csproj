@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="League\LeagueManager.cs" />
-    <Compile Include="League\League.cs" />
+    <Compile Include="LeagueManager.cs" />
+    <Compile Include="Models\League.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Score.cs" />

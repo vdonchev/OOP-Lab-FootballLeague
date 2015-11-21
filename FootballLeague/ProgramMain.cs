@@ -1,14 +1,13 @@
 ﻿namespace FootballLeague
 {
     using System;
-    using League;
 
     public static class ProgramMain
     {
         public static void Main(string[] args)
         {
-            string line;
-            while (!(line = Console.ReadLine()).Equals("End"))
+            string line = Console.ReadLine();
+            while (line != null && !line.Equals("End"))
             {
                 try
                 {
@@ -22,6 +21,8 @@
                 {
                     Console.Error.WriteLine(ex.Message);
                 }
+
+                line = Console.ReadLine();
             }
         }
     }
