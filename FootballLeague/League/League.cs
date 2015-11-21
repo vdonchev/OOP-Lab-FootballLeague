@@ -1,8 +1,9 @@
-﻿namespace FootballLeague.Models
+﻿namespace FootballLeague.League
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Models;
     using Utils;
 
     public static class League

@@ -1,7 +1,7 @@
 ﻿namespace FootballLeague
 {
     using System;
-    using Models;
+    using League;
 
     public static class ProgramMain
     {
